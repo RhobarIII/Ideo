@@ -12,6 +12,7 @@
     </style>
     <script>
         var ishidden=true;
+        var ishiddensidemenu=true ;  
         function ShowInput()
         {
             if(ishidden==true)
@@ -24,15 +25,25 @@
                 document.getElementById("hide").style.visibility="hidden";
                 ishidden=true;
             }
+         
+        }
+        function SideMenu()
+        {
+            if(ishiddensidemenu==true)
+            {
+                document.getElementById("sidemenu").style.width="150px";
+                document.getElementById("arrow").style.transform="rotate(0deg)";
+                ishiddensidemenu=false;
+            }
+            else if(ishiddensidemenu==false)
+            {
+                document.getElementById("sidemenu").style.width="0px";
+                document.getElementById("arrow").style.transform="rotate(180deg)"; 
+                ishiddensidemenu=true;
+            }
+
+
             
-        }
-        function OpenSideMenu()
-        {
-            document.getElementById("sidemenu").style.width="210px";
-        }
-        function CloseSideMenu()
-        {
-            document.getElementById("sidemenu").style.width="60px";
         }
     </script>
 </head>
@@ -83,10 +94,13 @@
                 <img src="FromPSD/fbico.png"><br>
                 <img src="FromPSD/linkedinico.png">
             </div>
-            <div id="opener">
-                <a href="#" onclick="OpenSideMenu()"><img src="FromPSD/arrow.png"></a>
-            </div>
+            
         </div>
+        <a href="#" onclick="SideMenu()">
+            <div id="opener">
+               <img src="FromPSD/arrow.png" id="arrow">
+            </div>
+            </a>
     </section>
 
     <section>
@@ -131,6 +145,9 @@
             </div>
         </div>
     </section>
+    <footer>
+        
+    </footer>
 </div>  
 </body>
 </html>

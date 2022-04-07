@@ -140,9 +140,9 @@ margin-bottom: 8px;
 #sidemenu
 {
     min-height: 1300px;
-    width:210px;
+    width:150px;
     position: sticky;
-    z-index: 2;
+    
     margin-right: 0px;
     padding-right: 0px;
     left: 0;
@@ -152,7 +152,7 @@ margin-bottom: 8px;
     padding-top: 60px;
     box-sizing: border-box;
     float:left;
-    box-shadow: 1px 2px 4px #adadad;
+   
     font-size: 16px;
     color:#023a5c;
 }
@@ -180,12 +180,7 @@ margin-bottom: 8px;
     float:left;
     width: 150px;
     padding-left: 10px;
-}
-#opener
-{
-    float: right;
-    width: 50px;
-    min-height: 820px;
+    
 }
 .dottedborder
 {
@@ -194,10 +189,25 @@ margin-bottom: 8px;
     margin-bottom: 5px;
     min-height: 5px;
 }
-#opener a
+a #opener
 {
+    width: 60px;
     display: flex;
    align-items: center; 
    justify-content: center;
-    height: 500px;
+   min-height: 1300px;
+    float: left;
+    box-shadow: 1px 2px 4px #adadad;
+}
+#operner
+{
+    transition: 0.3s;
+}
+footer
+{
+    width:100%;
+    background-image: url("FromPSD/MainMenu.png");
+    height: 88px;
+    display: flex;
+    bottom: 0;
 }
