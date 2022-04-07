@@ -26,9 +26,18 @@
             }
             
         }
+        function OpenSideMenu()
+        {
+            document.getElementById("sidemenu").style.width="210px";
+        }
+        function CloseSideMenu()
+        {
+            document.getElementById("sidemenu").style.width="60px";
+        }
     </script>
 </head>
 <body>
+<div id="container">
     <header>
           
         <nav>
@@ -47,6 +56,39 @@
             </div>
         </nav>
     </header>
+
+    <section>
+        <div id="sidemenu" class="sidem"> 
+            <div id="sidemenucontent">
+                <h3>Menu</h3>
+                <div class="dottedborder"></div>
+                
+                    <a href="#">Aktualności</a>
+                    <a href="#">Branże</a>
+                    <a href="#">Produkty</a>
+                    <a href="#">Usługi</a>
+                    <a href="#">Referencje</a>
+                    <a href="#">Kontakt</a>
+                
+                <div class="dottedborder"></div>
+                
+                    <a href="#">O firmie</a>
+                    <a href="#">Nagrody</a>
+                    <a href="#">Relacje inwestorskie</a>
+                
+                   <a href="#">Partnerzy</a>
+                   <a href="#">Kariera</a>
+                
+                <div class="dottedborder"></div>
+                <img src="FromPSD/fbico.png"><br>
+                <img src="FromPSD/linkedinico.png">
+            </div>
+            <div id="opener">
+                <a href="#" onclick="OpenSideMenu()"><img src="FromPSD/arrow.png"></a>
+            </div>
+        </div>
+    </section>
+
     <section>
         <div id="content">
            
@@ -89,6 +131,6 @@
             </div>
         </div>
     </section>
-    
+</div>  
 </body>
 </html>
