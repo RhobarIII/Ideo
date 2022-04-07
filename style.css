@@ -6,6 +6,8 @@ body
     margin: 0px;
     padding: 0px;
     font-family: 'Montserrat', sans-serif;
+    color:black;
+    font-size: 16px;
 }
 ul
 {
@@ -57,12 +59,12 @@ nav ul li a
 #content
 {
   
-    display: flex;
+    
     position: relative;
     top: 0;
     
     right: -450px;
-    width: 900px;
+    width: 1000px;
     min-height: 500px;
 }
 #sub-logo
@@ -90,4 +92,38 @@ nav ul li a
     display: flex;
     position: relative;
     width: 100%;
+    float: left;
+    padding-top: 40px;
+}
+.txt
+{
+    width: 50%;
+    float: left;
+}
+#txt-container
+{
+    
+    justify-content: center;
+    align-items: center;
+}
+p
+{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color:black;
+    margin:0px;
+}
+h5
+{
+    margin-bottom: 2px;
+}
+#searchico
+{
+    position: absolute;
+    margin-left: 1600px;  
+}
+#searchico #hide
+{
+margin-right: 10px;
+visibility: hidden;
 }
