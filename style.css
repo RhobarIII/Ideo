@@ -119,6 +119,7 @@ h5
 }
 #searchico
 {
+    display: flex;
     position: absolute;
     margin-left: 1600px;  
 }
@@ -126,4 +127,6 @@ h5
 {
 margin-right: 10px;
 visibility: hidden;
+height: 20px;
+margin-bottom: 8px;
 }
